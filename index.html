@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vimifos</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+  </head>
+
+  <body>
+    <header id="header-nav">
+      <nav class="nav-mobile">
+        <div class="container">
+          <div class="conten-nav-mobile">
+            <div>
+              <lottie-player
+                src="./assets/images/logo-mobile.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="logo-mobile"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/images/hamburguesa.svg"
+                alt="hamburguesa"
+                id="img-hamburguesa"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="nav-pc"></nav>
+    </header>
+
+    <div class="menu-mobile-close" id="menu-mobile">
+      <div class="container-menu-mobile">
+        <div class="div-icono-cerrar">
+          <div>
+            <img
+              class="cerrar-mobile"
+              src="./assets/images/cerrar.svg"
+              id="close-menu"
+              alt="cerrar"
+              srcset=""
+            />
+          </div>
+        </div>
+
+        <div class="mb-5 mt-5">
+          <ul class="icono-lista-mobile">
+            <li>
+              <a href="https://vimifos.com/contacto">
+                <img
+                  src="./assets/images/email.svg"
+                  alt=""
+                  class="icono-mobile"
+                  srcset=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="tel:+528008464367">
+                <img
+                  src="./assets/images/celular.svg"
+                  alt=""
+                  class="icono-mobile"
+                  srcset=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://app.vimifos.com/login">
+                <img
+                  src="./assets/images/user.svg"
+                  alt=""
+                  class="icono-mobile"
+                  srcset=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container-list">
+          <ul class="ul-container-list">
+            <li class="url-mobile">
+              <a href="https://vimifos.com/inicio#" class="link-mobile"
+                >INICIO</a
+              >
+            </li>
+            <li class="url-mobile">
+              <a href="https://vimifos.com/inicio#especies" class="link-mobile"
+                >ESPECIES</a
+              >
+            </li>
+            <li class="url-mobile">
+              <a href="https://vimifos.com/inicio#cerca" class="link-mobile"
+                >CERCA DE TI</a
+              >
+            </li>
+
+            <li class="url-mobile">
+              <a
+                href="http://sofom.vimifos.com/"
+                class="link-mobile"
+                target="_blank"
+                >VIMIFOS CAPITAL</a
+              >
+            </li>
+            <li class="url-mobile">
+              <a
+                href="http://vimifospetcare.com/"
+                class="link-mobile"
+                target="_blank"
+                >PETCARE</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul id="social-media">
+            <li class="li-icono-rs">
+              <a
+                class="link-icono-rs"
+                href="https://facebook.com/Vimifos"
+                target="_blank"
+                ><i class="fab-icono fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="li-icono-rs">
+              <a
+                class="link-icono-rs"
+                href="https://youtube.com/user/VIMIFOSMx/videos"
+                target="_blank"
+                ><i class="fab-icono fab fa-youtube"></i
+              ></a>
+            </li>
+            <li class="li-icono-rs">
+              <a
+                class="link-icono-rs"
+                href="https://instagram.com/Vimifos"
+                target="_blank"
+                ><i class="fab-icono fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="li-icono-rs">
+              <a
+                class="link-icono-rs"
+                href="https://www.linkedin.com/company/14036024/"
+                target="_blank"
+                ><i class="fab-icono fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li class="li-icono-rs">
+              <a
+                class="link-icono-rs"
+                href="https://open.spotify.com/show/1WlpwFtJBWc7alYlS5oMC1?si=tsQmSzvkSfSR3sAOJzhRag"
+                target="_blank"
+                ><i class="fab-icono fab fa-spotify"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="preload">
+      <div>
+        <lottie-player
+          autoplay
+          loop
+          mode="normal"
+          src="./assets/images/preload.json"
+          class="imagen-preload"
+        >
+        </lottie-player>
+      </div>
+    </div>
+
+    <section class="section-portada">
+      <div id="bgvid"></div>
+      <div id="bgvid2"></div>
+    </section>
+
+    <section class="section-especies">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-color: rgb(20, 163, 218)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card"
+                src="/assets/imgs/icon/acuicultura.svg"
+              />
+              <h1 class="title-especie-card mb-2">ACUICULTURA</h1>
+              <p class="text-especie-card">
+                Como líderes en soluciones nutricionales para la industria
+                acuícola aseguramos la calidad para una mejor producción. La
+                innovación y actualización nos lleva a seguir desarrollando
+                productos de alta calidad, comprometidos con el enorme reto que
+                representa la acuicultura a nivel mundial.
+              </p>
+              <a
+                href="/producto/bumper-crop"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: rgb(220, 101, 30)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card image-marrano"
+                src="/assets/imgs/icon/porcicultura.svg"
+              />
+              <h1 class="title-especie-card mb-2">PORCICULTURA</h1>
+              <p class="text-especie-card">
+                Desde hace más de 40 años, colaboramos con las producciones más
+                exigentes de México adaptándonos rápidamente a los más altos
+                estándares de calidad para crear alimentos más saludables y
+                libres de antibióticos, evolucionando y añadiendo tecnologías
+                más útiles para hacer tu producción más rentable y efectiva.
+              </p>
+              <a
+                href="/producto/babypig"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: rgb(52, 46, 46)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card"
+                src="/assets/imgs/icon/ganaderia.svg"
+              />
+              <h1 class="title-especie-card mb-2">GANADERÍA</h1>
+              <p class="text-especie-card">
+                En Vimifos deseamos asesorarte y brindarte soluciones
+                alimenticias especializadas para el ganadero de carne o
+                productor de leche. De la mano para asesórate a través de un
+                enfoque en innovación y tecnología para la nutrición integral
+                bovina, con el fin de que tu producción crezca y ser productivos
+                a través de la alimentación.
+              </p>
+              <a
+                href="/producto/ganado-suplementacion-anual"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: rgb(215, 25, 33)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card image-gallina"
+                src="/assets/imgs/icon/avicultura.svg"
+              />
+              <h1 class="title-especie-card mb-2">AVICULTURA</h1>
+              <p class="text-especie-card">
+                Una dieta balanceada en proteína y vitaminas contribuye a la
+                energía y los nutrientes esenciales para el crecimiento,
+                reproducción y salud de las aves. Elige un alimento
+                especialmente formulado para cada etapa de la vida.
+              </p>
+              <a
+                href="/producto/basemix"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: rgb(185, 104, 49)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card image-gallina"
+                src="/assets/imgs/icon/venados.svg"
+              />
+              <h1 class="title-especie-card mb-2">VENADOS</h1>
+              <p class="text-especie-card">
+                La totalmente nueva Buralandeer, la cual fue desarrollada
+                específicamente como plan de alimentación integral del venado
+                bura. Con el propósito de hacer que tus especímenes se
+                desarrollen correctamente y alcancen su máximo potencial en
+                trofeo.
+              </p>
+              <a
+                href="/producto/bura-landeer-cria"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: rgb(53, 60, 84)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card image-gallina"
+                src="/assets/imgs/icon/caballos.svg"
+              />
+              <h1 class="title-especie-card mb-2">CABALLOS</h1>
+              <p class="text-especie-card">
+                Nuestra línea de alimentos y minerales está desarrollada para
+                satisfacer y cubrir con todos los requerimientos nutricionales
+                específicos para equinos, enfocados en cubrir las necesidades
+                nutricionales de todas las etapas del caballo.
+              </p>
+              <a
+                href="/producto/dinasty-horse-caballos"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: rgb(56, 186, 155)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card"
+                src="/assets/imgs/icon/caprinosyovinos.svg"
+              />
+              <h1 class="title-especie-card mb-2">CAPRINOS Y OVINOS</h1>
+              <p class="text-especie-card">
+                Porque en Vimifos, también tenemos soluciones para la
+                alimentación y desarrollo de los pequeños rumiantes como son el
+                caso de borregos y cabras. Contamos con presentaciones
+                granulado, pellet y tinas.
+              </p>
+              <a
+                href="/producto/vimigoat"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-color: rgb(250, 177, 22)">
+            <div class="card-especie">
+              <img
+                alt=""
+                class="img-fluid logo-image-card image-gallina"
+                src="/assets/imgs/icon/aditivos.svg"
+              />
+              <h1 class="title-especie-card mb-2">ADITIVOS</h1>
+              <p class="text-especie-card">
+                Nuestro portafolio de aditivos especializados y tecnologías
+                nutricionales proporciona soluciones para optimizar el
+                rendimiento, la rentabilidad y la eficiencia para los
+                productores.
+              </p>
+              <a
+                href="/producto/ingredientes"
+                class="btn btn-outline-primary button-card"
+                target="_top"
+              >
+                <i class="fa fa-plus mr-10"></i> CONOCE MÁS ...
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="section-titulo">
+      <div class="container">
+        <h1 class="m-0 h1-titulo">Estamos cerca de ti</h1>
+      </div>
+    </section>
+
+    <section>
+      <h1>MAPA</h1>
+    </section>
+
+    <section class="section-titulo">
+      <div class="container text-center">
+        <h1 class="m-0 h1-titulo">Síguenos!</h1>
+      </div>
+    </section>
+
+    <section class="section-youtube">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div>
+              <h2 class="titulo-youtube">
+                VIMIFOS
+                <br />
+                YOUTUBE
+                <br />
+                _
+              </h2>
+
+              <p class="descipcion-iframes p-0 m-0">
+                Conoce las últimas tendencias, noticias y conocimientos sobre la
+                industria de nutrición animal, así como información sobre nuevas
+                investigaciones y soluciones.
+              </p>
+
+              <a
+                href="https://youtube.com/user/VIMIFOSMx/videos"
+                class="btn btn-danger mt-5 btn-youtube"
+                target="_blank"
+                >VER AHORA</a
+              >
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="container-iframe-youtube">
+              <div class="div-iframe-youtube">
+                <iframe
+                  class="iframe-youtube"
+                  loading="lazy"
+                  style="width: 100%"
+                  src="https://www.youtube.com/embed/videoseries?list=UUDs8xn_37dZnEQPuQr8opAQ"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spotify">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="container-iframe-spotify">
+              <div class="div-iframe-spotify">
+                <iframe
+                  loading="lazy"
+                  class="iframe-spotify"
+                  allowtransparency="true"
+                  frameborder="0"
+                  width="100"
+                  src="https://open.spotify.com/embed/show/1WlpwFtJBWc7alYlS5oMC1?theme=0"
+                  allow="encrypted-media"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div>
+              <h2 class="titulo-spotify">
+                CAFÉ
+                <br />
+                PECUARIO
+                <br />
+                _
+              </h2>
+
+              <p class="descipcion-iframes">
+                Conoce las últimas tendencias, noticias y conocimientos sobre la
+                industria de nutrición animal, así como información sobre nuevas
+                investigaciones y soluciones.
+              </p>
+
+              <a
+                href="https://open.spotify.com/show/1WlpwFtJBWc7alYlS5oMC1?si=tsQmSzvkSfSR3sAOJzhRag"
+                class="btn btn-success mt-3 btn-spotify"
+                target="_blank"
+                >ESCUCHAR</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-titulo">
+      <div class="container text-center">
+        <h1 class="m-0 h1-titulo">Certificaciones</h1>
+      </div>
+    </section>
+
+    <section class="section-certificado">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+						<div>
+							<p class="descripcion-certificado">
+								En VIMIFOS somos responsables de brindar a nuestros clientes y
+								distribuidores productos con las más altas garantías nutricionales,
+								producidos con estandares internacionales de calidad e inocuidad en
+								cuidado del medio ambiente que respaldan nuestras certificaciones
+								internacionales.
+							</p>
+							<p class="descripcion-certificado">
+								Todas las personas que colaboramos en VIMIFOS tenemos el compromiso de
+								satisfacer las necesidad y expectativas de nuestras partes
+								interesadas, tal como lo establece el Sistema de gestión integral con
+								el que fabricamos nuestros productos, bajo nuestras certificaciones.
+							</p>
+						</div>
+          </div>
+          <div class="col-12">
+            <div class="card card-certificado" style="width: 100%;">
+              <div class="card-body">
+								<img
+									alt=""
+									class="img-fluid"
+									src="assets/imgs/brands/fssc-22000.png"
+								/>
+								<h5>
+									Seguridad alimentaria FSSC 22000 
+								</h5>
+                <p class="card-text">
+									En todos los procesos de producción, VIMIFOS aplica los más
+									estrictos programas en seguridad alimentaria, gracias a nuestros
+									Planes HACCP con los cuales garatizamos la inocuidad de nuestros
+									productos en todas las especies que fabricamos. Nutrición animal con seguridad alimentaria. (inocuidad)
+                </p>
+
+								<ul class="" style="list-style: circle inside;">
+									<li>Planta Villahermosa</li>
+									<li>Planta Cd. Obregón</li>
+									<li>Planta Querétaro</li>
+									<li>Planta EL Salto</li>
+								</ul>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card card-certificado" style="width: 100%;">
+              <div class="card-body">
+								<img
+									alt=""
+									class="img-fluid"
+									src="assets/imgs/brands/iso-14001.png"
+								/>
+								<h5>
+									Compromiso con el medio ambiente ISO 14001:2015 
+								</h5>
+                <p class="card-text">
+									En todos los procesos de producción, VIMIFOS aplica los más
+									estrictos programas en seguridad alimentaria, gracias a nuestros
+									Planes HACCP con los cuales garatizamos la inocuidad de nuestros
+									productos en todas las especies que fabricamos. Nutrición animal con seguridad alimentaria. 
+									(inocuidad)
+                </p>
+
+								<ul class="">
+									<li>Planta El Salto</li>
+								</ul>
+
+              </div>
+            </div>
+          </div>
+
+					<div class="col-12">
+            <div class="card card-certificado" style="width: 100%;">
+              <div class="card-body">
+								<img
+									alt=""
+									class="img-fluid"
+									src="assets/imgs/brands/bap-logo.png"
+								/>
+								<h5>
+									Acuicultura responsable 
+								</h5>
+                <p class="card-text">
+									Somos conscientes que el inicio de la cadena de valor, se logra
+									con el abastecimiento sostenible. Esto es parte de nuestro
+									compromiso y por ello, VIMIFOS cuenta con certificación en BUENAS
+									PRÁCTICAS DE ACUICULTURA BAP, que se suma a nuestro sistema de
+									seguridad alimentaria, adquirimos materias primas de origen marino
+									y origen vegetal certificadas en estándares de sustentablidad. 
+                </p>
+
+								<ul class="">
+									<li>Planta EL Salto</li>
+									<li>Planta Villahermosa</li>
+									<li>Planta Cd. Obregón</li>
+								</ul>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card card-certificado" style="width: 100%;">
+              <div class="card-body">
+								<img
+									alt=""
+									class="img-fluid"
+									src="assets/imgs/brands/sedex.png"
+								/>
+								<h5>
+									Abastecimiento Responsable | SEDEX SMETA 4 pilares 
+								</h5>
+                <p class="card-text">
+									VIMIFOS es parte del Comercio Ético de los Miembros de Sedex, ofreciendo a nuestros clientes y sus cadenas de suministro reportes de prácticas comerciales éticas. Satifaciendo las demandas de los compradores, mostrando nuestras acreditaciones éticas.
+									SMETA utiliza el Código Base de la Iniciativa de Comercio Ético y la ley local como sus estándares de monitoreo, las cuales comprenden 4 pilares de abastecimiento responsable:
+                </p>
+
+								<ul>
+									<li>Normas Laborales</li>
+									<li>Salud &amp; Seguridad</li>
+									<li>Medioambiente&nbsp;</li>
+									<li>Ética Empresarial</li>
+								</ul>
+
+								<ul class="pilars-list">
+									<li>Planta EL Salto</li>
+									<li>Planta Cd. Obregón</li>
+								</ul>
+
+              </div>
+            </div>
+          </div>
+
+					<div class="col-12">
+            <div class="card card-certificado" style="width: 100%;">
+              <div class="card-body">
+								<img
+									alt=""
+									class="img-fluid"
+									src="assets/imgs/brands/senasica.png"
+								/>
+								<h5>
+									CERTIFICACIÓN SENASICA 
+								</h5>
+                <p class="card-text">
+									VIMIFOS cumple la normativa vigente aplicable para
+									establecimientos industriales y comerciales como lo indica la Ley
+									Federal de Salud Animal y su Reglamento. 
+                </p>
+
+								<p class="card-text">
+									Mantenemos las Certificaciones en Buenas prácticas de manufactura
+									(BPM) e inspección de NOM's Zoosanitarias en todas nuestras
+									Plantas de alimentos.
+                </p>
+
+								<p class="card-text">
+									Nuestros Laboratorios VIMIFOS Occidente y Noroeste están
+              		certificados como Laboratorio de Control de Calidad Interno. 
+                </p>
+
+								<ul>
+									<li>Normas Laborales</li>
+									<li>Salud &amp; Seguridad</li>
+									<li>Medioambiente&nbsp;</li>
+									<li>Ética Empresarial</li>
+								</ul>
+
+								<ul class="pilars-list">
+									<li>Planta EL Salto</li>
+									<li>Planta Cd. Obregón</li>
+								</ul>
+								
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<section class="section-titulo">
+      <div class="container text-center">
+        <h1 class="m-0 h1-titulo">Contáctanos 800 846 4367</h1>
+      </div>
+    </section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<iframe src="https://arbolserver.com/cuentas/vimifos/formulario/" width="100%" height="1100" frameborder="0" style="margin-top: 20px">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-titulo section-titulo-footer">
+      <div class="container text-center">
+        <h1 class="m-0 h1-titulo h1-titulo-footer">AVISO DE PRIVACIDAD | POLÍTICA INTEGRAL</h1>
+      </div>
+    </section>
+
+
+    <footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="informacion-footer">
+							<h6 class="text-footer-titulo text-footer">
+								Contáctanos
+							</h6>
+							<h6 class="text-footer">
+								<i class="fas fa-phone-alt" style="color: #fff;"></i>
+								<a href="" class="text-footer text-footer-a">
+									800 846-4367
+								</a>
+							</h6>
+							<h6 class="text-footer">
+								<i class="fa fa-envelope mr-15" style="color: #fff;"></i>
+								<a href="" class="text-footer text-footer-a">
+									comunicacion@vimifos.com
+								</a>
+							</h6>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div>
+							<img class="img-fluid logo-footer" src="/assets/imgs/logo.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+    </footer>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</html>
