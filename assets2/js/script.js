@@ -1,16 +1,12 @@
 $(document).ready(function () {
   function videoOpenDevice() {
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
+    if (/Mobi/.test(navigator.userAgent)) {
       var videos2 = [
-        "assets/video/inicio-01-m.mp4",
-        "assets/video/inicio-02-m.mp4",
-        "assets/video/inicio-03-m.mp4",
-        "assets/video/inicio-04-m.mp4",
-        "assets/video/inicio-05-m.mp4",
+        "assets2/video/inicio-01-m.mp4",
+        "assets2/video/inicio-02-m.mp4",
+        "assets2/video/inicio-03-m.mp4",
+        "assets2/video/inicio-04-m.mp4",
+        "assets2/video/inicio-05-m.mp4",
       ];
       let current = Math.floor(Math.random() * videos2.length);
       $("#bgvid2").html(
@@ -24,13 +20,15 @@ $(document).ready(function () {
       );
 
       $("#bgvid").remove();
+			console.log('mobile');
     } else {
+			console.log('pc');
       var videos = [
-        "assets/video/inicio-01.mp4",
-        "assets/video/inicio-02.mp4",
-        "assets/video/inicio-03.mp4",
-        "assets/video/inicio-04.mp4",
-        "assets/video/inicio-05.mp4",
+        "assets2/video/inicio-01.mp4",
+        "assets2/video/inicio-02.mp4",
+        "assets2/video/inicio-03.mp4",
+        "assets2/video/inicio-04.mp4",
+        "assets2/video/inicio-05.mp4",
       ];
 
       let current = Math.floor(Math.random() * videos.length);
