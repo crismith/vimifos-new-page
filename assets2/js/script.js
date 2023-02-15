@@ -50,6 +50,15 @@ $(document).ready(function () {
   videoOpenDevice();
 });
 
+function initPreload() {
+  const element = document.getElementById("preload");
+  element.remove();
+}
+
+setTimeout(() => {
+  initPreload();
+}, 2000);
+
 var menuMobile = document.getElementById("menu-mobile");
 var openMenu = document.querySelector("#img-hamburguesa");
 var closeMenu = document.querySelector("#close-menu");
@@ -71,16 +80,6 @@ closeMenu.addEventListener(
   },
   false
 );
-
-
-function initPreload() {
-  const element = document.getElementById("preload");
-  element.remove();
-}
-
-setTimeout(() => {
-  initPreload();
-}, 2500);
 
 window.onscroll = function () {
   activeHeader();
