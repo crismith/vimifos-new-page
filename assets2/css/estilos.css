@@ -104,11 +104,13 @@ header {
 	align-items: center;
 }
 
-.logo-mobile{
-	width: 65px !important;
-	/* height: 100px !important; */
+.nav-pc{
+	display: none;
 }
 
+.logo-mobile{
+	width: 65px !important;
+}
 
 .menu-mobile-close{
 	display: none;
