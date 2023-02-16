@@ -1,0 +1,226 @@
+@media (min-width: 1024px) {
+	.nav-mobile{
+		display: none;
+	}
+
+	.nav-pc{
+		display: block;
+	}
+	
+	.logo-mobile{
+		width: 80px !important;
+	}
+
+	.icono-header-pc {
+		width: 13%;
+	}
+
+
+	.logo-rrss-header{
+		width: 15%;
+	}
+
+	.container-links-pc-1{
+		padding-top: .7rem;
+	}
+
+	.link-pc{
+		color: #fff;
+		border: 1px solid #fff;
+    border-radius: 25px;
+    min-width: 110px;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 5px;
+	}
+
+	.links-pc-1{
+		color: #fff;
+		text-decoration: none;
+		display: flex;
+    align-items: center;
+	}
+
+	.icon-pc-link {
+		margin-left: 3px;
+	}
+
+	.icon-pc-link:first-child {
+			padding-left: 0;margin-left: 0
+		;
+	}
+
+	.container-links-pc{
+		margin-top: 1rem;
+	}
+
+	.link-pc:first-child {
+			padding-left: 0;margin-left: 0
+		;
+	}
+
+	.section-portada{
+		height: 568px;
+	}
+
+	.card-especie {
+		height: 550px;
+	}
+
+	.logo-image-card{
+		max-width: 300px;
+    height: 80px;
+	}
+
+	.title-especie-card{
+		font-size: 1.7rem;
+	}
+	
+	.text-especie-card{
+		font-size: 15px;
+	}
+	
+	.h1-titulo{
+		font-family: var(--font-Exo2-Black);
+	}
+
+
+	.section-youtube{
+		background-image: url(./../imgs/bg-youtube.png);
+		background-position: 504px -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+		padding: 4rem 0;
+		margin: 0;
+	}
+
+	.container-iframe-youtube {
+		flex-flow: column;
+		padding-left: 1.5rem;
+	}
+
+	.container-imagen-icon-youtube {
+		width: 100%;
+	}
+
+	.imagen-icon-youtube{
+		display: block !important;
+		width: 30%;
+	}
+
+	.div-iframe-youtube{
+		margin-top: 2rem;
+		width: 100%;
+	}
+
+	.section-spotify{
+		background-image: url(./../imgs/bg-spotify.png);
+		background-position: -504px -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+		padding: 4rem 0;
+	}
+
+	.div-iframe-spotify{
+		flex-flow: column;
+		width: 100%;
+		padding-right: 1.5rem;
+	}
+
+	.div-imagen-icon-spotify{
+		display: flex;
+    align-items: center;
+    justify-content: end;
+	}
+
+	.imagen-icon-spotify{
+		display: flex !important;
+		width: 30%;
+		margin-bottom: 2rem;
+	}
+
+	.iframe-spotify{
+		height: 250px;
+	}
+
+	.row-certificado{
+		width: 100%;
+	}
+
+	.col-certificado{
+		width: 20%;
+		padding-right: 0;
+		padding-left: 10px;
+	}
+
+	.col-certificado:first-child {
+		padding-left: 0;
+	}
+
+	.card-certificado{
+		width: 100% !important;
+	}
+
+	.image-certificado{
+		width: 80%;
+	}
+
+	.titulo-certificado{
+		font-size: 1rem;
+	}
+
+	.card-text{
+		font-size: 14px;
+	}
+
+	.ul-certificado {
+		padding: 1rem 0 1rem 0.5rem;
+    font-size: 13px;
+	}
+
+
+}
+
+@media (min-width: 1200px) {
+	
+	.container-logo-pc {
+		display: flex;
+		justify-content: end;
+	}
+
+	.div-container-links-pc{
+		padding-left: 15rem;
+	}
+
+	.nav-social{
+		text-align: right;
+	}
+
+	.section-portada{
+		height:  712px;
+	}
+
+	.section-youtube{
+		background-position: 760px -100px;
+		padding: 8rem 0;
+	}
+
+	.div-descripcion-youtube{
+		padding-left: 5rem;
+		padding-right: 2rem;
+	}
+
+	.imagen-icon-youtube{
+		width: 20%;
+	}
+
+	.iframe-youtube{
+		width: 70% !important;
+	}
+
+	.section-spotify{
+		background-position: -759px -100px;
+	}
+
+}

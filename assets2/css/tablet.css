@@ -1,0 +1,76 @@
+@media (min-width: 768px) {
+
+	header {
+    display: flex;
+    align-items: center;
+	}
+
+	.nav-mobile{
+		width: 100%;
+	}
+
+	.logo-mobile{
+		width: 70px !important;
+	}
+	
+	.section-portada{
+		height: 900px;
+	}
+
+	.card-especie{
+		height: 720px;
+	}
+
+	.title-especie-card {
+		font-size: 1.5rem;
+	}
+
+	.text-especie-card{
+		font-size: 1rem;
+	}
+
+	.button-card{
+		width: 100%;
+	}
+
+	.section-youtube{
+		width: 100%;
+		padding: 2rem 0;
+		/* background-color: var(--color-rojo-titulo); */
+	}
+	
+	.container-iframe-youtube{
+		height: 100%;
+		margin: 0;
+	}
+
+	.section-spotify{
+		padding: 2rem 0;
+	}
+
+	.container-iframe-spotify{
+		height: 100%;
+	}
+
+	.image-certificado{
+		width: 50%;
+	}
+
+
+	.informacion-footer{
+		text-align: left;
+	}
+
+	.h1-titulo-footer{
+		padding: 0;
+	}	
+
+	.div-logo-footer{
+		text-align: right;
+	}
+
+	.logo-footer{
+		margin: 0;
+	}
+
+}

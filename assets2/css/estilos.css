@@ -40,11 +40,11 @@
   --color-rojo-titulo:  #F00;
   --color-rojo-boton:  #d71921;
   --color-verde:  #00d95f;
-	--font-Exo2-Regular: 'Exo2-Regular';
-	--font-Exo2-Black: 'Exo2-Black';
-	--font-Exo2-Bold: 'Exo2-Bold';
-	--font-Exo2-Light: 'Exo2-Light';
 	--font-Exo2-Thin: 'Exo2-Thin';
+	--font-Exo2-Light: 'Exo2-Light';
+	--font-Exo2-Regular: 'Exo2-Regular';
+	--font-Exo2-Bold: 'Exo2-Bold';
+	--font-Exo2-Black: 'Exo2-Black';
 }
 
 body {
