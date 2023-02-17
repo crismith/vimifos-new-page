@@ -20,9 +20,7 @@ $(document).ready(function () {
       );
 
       $("#bgvid").remove();
-			console.log('mobile');
     } else {
-			console.log('pc');
       var videos = [
         "assets2/video/inicio-01.mp4",
         "assets2/video/inicio-02.mp4",
@@ -59,6 +57,8 @@ setTimeout(() => {
   initPreload();
 }, 2000);
 
+
+
 var menuMobile = document.getElementById("menu-mobile");
 var openMenu = document.querySelector("#img-hamburguesa");
 var closeMenu = document.querySelector("#close-menu");
@@ -75,11 +75,26 @@ openMenu.addEventListener(
 closeMenu.addEventListener(
   "click",
   function (event) {
-    menuMobile.classList.remove("menu-mobile-open");
-    menuMobile.classList.add("menu-mobile-close");
+		closeMenuFuncion();
   },
   false
 );
+
+function closeMenuFuncion() {
+	menuMobile.classList.remove("menu-mobile-open");
+	menuMobile.classList.add("menu-mobile-close");
+}
+
+let mobileUrls = document.querySelectorAll('.li-mobile-close');
+mobileUrls.forEach(boton => {
+	boton.addEventListener(
+		"click",
+		function (event) {
+			closeMenuFuncion();
+		},
+		false
+	);
+});
 
 var cargaYoutube = 0;
 var cargaSpotify = 0;
@@ -132,10 +147,7 @@ function loadIframeYoutube() {
 	`;
 
 	cargarYoutube.innerHTML = iframeYoutube;
-	console.log('cargaYoutube *****', cargaYoutube);
 	cargaYoutube = 1;
-	console.log('cargaYoutube -----', cargaYoutube);
-	console.log('loadIframeYoutube');
 }
 
 function loadIframeYoutube() {
