@@ -81,13 +81,29 @@ closeMenu.addEventListener(
   false
 );
 
+var cargaYoutube = 0;
+var cargaSpotify = 0;
+var cargaFormulario = 0;
 window.onscroll = function () {
   activeHeader();
+	let scroll = document.documentElement.scrollTop;
+
+	if (scroll >= 300 && cargaYoutube == 0) {
+		loadIframeYoutube();
+	}
+
+	if (scroll >= 350 && cargaSpotify == 0) {
+		loadIframeSpotify();
+	}
+
+	if (scroll >= 420 && cargaFormulario == 0) {
+		loadIframeFormulario();
+	}
 };
 
 
 window.onload = function() {
-  var scroll = document.documentElement.scrollTop;
+  let scroll = document.documentElement.scrollTop;
 	if (scroll > 60) {
 		activeHeader();
 	}
@@ -99,6 +115,76 @@ function activeHeader() {
   } else {
     document.getElementById("header-nav").className = "";
   }
+}
+
+function loadIframeYoutube() {
+	var cargarYoutube = document.getElementById('iframe-youtube');
+	let iframeYoutube = `
+		<iframe
+			title="youtube"
+			class="iframe-youtube"
+			width=""
+			height=""
+			style="width: 100%"
+			src="https://www.youtube.com/embed/videoseries?list=UUDs8xn_37dZnEQPuQr8opAQ"
+		>
+		</iframe>
+	`;
+
+	cargarYoutube.innerHTML = iframeYoutube;
+	console.log('cargaYoutube *****', cargaYoutube);
+	cargaYoutube = 1;
+	console.log('cargaYoutube -----', cargaYoutube);
+	console.log('loadIframeYoutube');
+}
+
+function loadIframeYoutube() {
+	let cargarYoutube = document.getElementById('iframe-youtube');
+	let iframeYoutube = `
+		<iframe
+			title="youtube"
+			class="iframe-youtube"
+			style="width: 100%"
+			src="https://www.youtube.com/embed/videoseries?list=UUDs8xn_37dZnEQPuQr8opAQ"
+		>
+		</iframe>
+	`;
+
+	cargarYoutube.innerHTML = iframeYoutube;
+	cargaYoutube = 1;
+}
+
+function loadIframeSpotify() {
+	let cargarSpotify = document.getElementById('iframe-spotify');
+	let iframeSpotify = `
+		<iframe
+			title="spotify"
+			class="iframe-spotify"
+			allowtransparency="true"
+			frameborder="0"
+			src="https://open.spotify.com/embed/show/1WlpwFtJBWc7alYlS5oMC1?theme=0"
+			allow="encrypted-media"
+		></iframe>
+	`;
+
+	cargarSpotify.innerHTML = iframeSpotify;
+	cargaSpotify = 1;
+}
+
+function loadIframeFormulario() {
+	let cargarFormulario = document.getElementById('iframe-formulario');
+	let iframeFormulario = `
+		<iframe
+			title="formulario"
+			src="https://arbolserver.com/cuentas/vimifos/formulario/"
+			width="100%"
+			height="1100"
+			frameborder="0"
+			style="margin-top: 20px"> 
+		</iframe>
+	`;
+	cargarFormulario.innerHTML = iframeFormulario;
+	cargaFormulario = 1;
 }
 
 var swiper = new Swiper(".mySwiper", {

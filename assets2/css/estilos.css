@@ -239,7 +239,7 @@ link-icono-rs{
 }
 
 #bgvid{
-	/* display: none; */
+	display: none;
 }
 
 /* section-titulo */
@@ -379,6 +379,11 @@ link-icono-rs{
 
 .div-iframe-spotify{
 	width: 90%;
+}
+
+#iframe-spotify{
+	width: 100%;
+	height: 180px;
 }
 
 .iframe-spotify{
