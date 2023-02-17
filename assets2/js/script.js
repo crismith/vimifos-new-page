@@ -85,6 +85,14 @@ window.onscroll = function () {
   activeHeader();
 };
 
+
+window.onload = function() {
+  var scroll = document.documentElement.scrollTop;
+	if (scroll > 60) {
+		activeHeader();
+	}
+}
+
 function activeHeader() {
   if (document.documentElement.scrollTop > 50) {
     document.getElementById("header-nav").className = "header-bg";
